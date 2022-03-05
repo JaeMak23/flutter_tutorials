@@ -23,6 +23,18 @@ class MainPage extends StatelessWidget {
         appBar: AppBar(
             backgroundColor: Colors.purple,
             title: const Text('App Bar'),
+            bottom: PreferredSize(
+              preferredSize: const Size.fromHeight(80),
+              child: Container(
+                height: 80,
+                color: Colors.black26,
+                child: const Center(
+                    child: Text(
+                  'Bottom',
+                  style: TextStyle(color: Colors.white),
+                )),
+              ),
+            ),
             leading: IconButton(
               icon: const Icon(Icons.menu),
               onPressed: () {},
